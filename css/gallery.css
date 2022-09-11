@@ -1,0 +1,36 @@
+.gallery-1 {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  background-color: ;
+}
+
+.gallery-1__img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery-1__img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-1__img-container--right {
+  background-color: #fbffa7;
+  height: 86.3rem;
+  border-radius: 2px;
+}
+
+.gallery-1__img-container--left {
+  background-color: #ffffff;
+}
+
+.gallery-1__img--right {
+  transform: scale(0.56);
+  margin-left: 12.5rem;
+}
+
+.gallery-1__img--left {
+  margin-left: 25rem;
+  z-index: 1;
+}
