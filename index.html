@@ -7,36 +7,69 @@
 
     <title>Learn more about Ableton</title>
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/typography.css" />
   </head>
 
   <body>
-    <nav>
-      <!-- LOGO -->
-      <menu>
-        <li><a href="#"> Live</a></li>
-        <li><a href="#"> Push</a></li>
-        <li><a href="#"> Link</a></li>
-        <li><a href="#"> Shop</a></li>
-        <li><a href="#"> Packs</a></li>
-        <li><a href="#"> Help</a></li>
-        <li><a href="#"> More</a></li>
+    <nav class="main-navigation">
+      <svg
+        role="img"
+        class="main-navigation__logo"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 45 21"
+      >
+        <path
+          d="M0 0h3v21H0zM6 0h3v21H6zM12 0h3v21h-3zM18 0h3v21h-3zM24 18h21v3H24zM24 12h21v3H24zM24 6h21v3H24zM24 0h21v3H24z"
+        ></path>
+      </svg>
+
+      <menu class="main-navigation__menu main-navigation__menu--left">
+        <li class="main-navigation__list-item"><a href="#"> Live</a></li>
+        <li class="main-navigation__list-item"><a href="#"> Push</a></li>
+        <li class="main-navigation__list-item"><a href="#"> Link</a></li>
+        <li class="main-navigation__list-item"><a href="#"> Shop</a></li>
+        <li class="main-navigation__list-item"><a href="#"> Packs</a></li>
+        <li class="main-navigation__list-item"><a href="#"> Help</a></li>
+        <li
+          class="main-navigation__list-item main-navigation__list-item--highlighted"
+        >
+          <a href="#"> More +</a>
+        </li>
       </menu>
 
-      <menu>
-        <li><a href="#">Try Live for free</a></li>
-        <li><a href="#">Login or register</a></li>
+      <menu class="main-navigation__menu main-navigation__menu--right">
+        <li class="main-navigation__list-item main-navigation__list-item--cta">
+          <a href="#">Try Live for free</a>
+        </li>
+        <li
+          class="main-navigation__list-item main-navigation__list-item--small"
+        >
+          <a href="#">Login or register</a>
+        </li>
       </menu>
     </nav>
 
-    <nav>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Jobs</a></li>
-      <li><a href="#">Apprenticeships</a></li>
+    <nav class="sub-navigation">
+      <menu class="sub-navigation__menu">
+        <li class="sub-navigation__list-item sub-navigation__list-item--active">
+          <a href="#">About</a>
+        </li>
+        <li class="sub-navigation__list-item"><a href="#">Jobs</a></li>
+        <li class="sub-navigation__list-item">
+          <a href="#">Apprenticeships</a>
+        </li>
+      </menu>
     </nav>
   </body>
 </html>
