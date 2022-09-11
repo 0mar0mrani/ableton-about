@@ -79,3 +79,40 @@
   width: 100%;
   height: auto;
 }
+
+/* Gallery 3 */
+.gallery-3 {
+  display: flex;
+  align-items: center;
+  height: 90rem;
+  position: relative;
+}
+
+.gallery-3__img-container {
+  z-index: 2;
+}
+.gallery-3__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.gallery-3__background {
+  background-color: #d5b3ff;
+  width: 107rem;
+  height: 90rem;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 1;
+}
+.gallery-3__img-container--left {
+  width: 33%;
+  margin-left: 13.3rem;
+}
+
+.gallery-3__img-container--right {
+  width: 41.5%;
+  margin-left: auto;
+}
