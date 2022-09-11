@@ -6,7 +6,6 @@
   padding-bottom: 2rem;
   font-size: 2.5rem;
   line-height: 4.2rem;
-  color: #0000ff;
 }
 
 .about-text_paragraph {
@@ -14,4 +13,8 @@
   line-height: 3rem;
   font-weight: 300;
   margin-bottom: 2rem;
+}
+
+.about-text__h2 a {
+  color: #0000ff;
 }
