@@ -1,0 +1,9 @@
+.full-image {
+  margin: 0 13.3rem;
+}
+
+.full-image__image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
