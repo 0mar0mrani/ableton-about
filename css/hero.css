@@ -18,4 +18,5 @@
   color: #fc5947;
   font-size: 13rem;
   font-weight: 600;
+  user-select: none;
 }
