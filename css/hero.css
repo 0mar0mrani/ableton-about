@@ -1,0 +1,21 @@
+.hero {
+  max-width: 90vw;
+  margin: 0 auto;
+  height: 90vh;
+
+  background-image: url('../assets/hero.jpg');
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__h1 {
+  color: #fc5947;
+  font-size: 13rem;
+  font-weight: 600;
+}
