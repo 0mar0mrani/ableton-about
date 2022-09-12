@@ -1,0 +1,48 @@
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 14.3rem;
+  padding-bottom: 13.3rem;
+}
+
+.card__image-container {
+}
+
+.card__image {
+  width: 100%;
+  display: block;
+}
+
+.card__text-container {
+  background-color: #b1c4ff;
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 13.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card__text-container p:last-child {
+  margin-top: 3rem;
+  color: #0000ff;
+}
+
+.card__text {
+  display: flex;
+  align-items: center;
+}
+
+/* Icon */
+.card__text-container p:last-child::after {
+  content: ' ';
+  display: inline-block;
+  background-image: url('../assets/icon.svg');
+  background-repeat: no-repeat;
+  height: 2rem;
+  width: 2rem;
+  margin-top: 0.6rem;
+  margin-left: -0rem;
+  filter: invert(10%) sepia(100%) saturate(4911%) hue-rotate(242deg)
+    brightness(104%) contrast(141%);
+}
