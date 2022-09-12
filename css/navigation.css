@@ -1,9 +1,10 @@
 .main-navigation {
   display: flex;
+  font-size: 1.8rem;
   padding: 0.5rem 3rem;
   align-items: center;
-  font-size: 1.8rem;
   border-bottom: 2px solid #f3f3f3;
+  z-index: 9999;
 }
 
 .main-navigation__logo {
@@ -31,16 +32,6 @@
   font-weight: 600;
 }
 
-.sub-navigation__menu {
-  display: flex;
-  font-size: 1.4rem;
-  align-items: center;
-  padding: 0.5rem 3rem;
-  gap: 2rem;
-  font-weight: 600;
-  padding: 2rem 3rem;
-}
-
 .main-navigation__list-item--highlighted,
 .sub-navigation__list-item--active {
   color: #ff764d;
@@ -48,4 +39,21 @@
 
 .main-navigation__list-item--cta {
   color: #0000ff;
+}
+
+.sub-navigation {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #ffffffea;
+}
+
+.sub-navigation__menu {
+  display: flex;
+  font-size: 1.4rem;
+  padding: 0.5rem 3rem;
+  align-items: center;
+  gap: 2rem;
+  font-weight: 600;
+  padding: 2rem 3rem;
 }
