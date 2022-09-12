@@ -4,15 +4,16 @@
 
 .about-text__h2 {
   padding-bottom: 2rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
   line-height: 4.2rem;
+  font-weight: 500;
 }
 
 .about-text_paragraph {
-  font-size: 1.7rem;
+  font-size: 2rem;
   line-height: 3rem;
-  font-weight: 300;
   margin-bottom: 2rem;
+  font-weight: 400;
 }
 
 .about-text__h2 a {
