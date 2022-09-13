@@ -47,8 +47,8 @@
   right: 50%;
   z-index: 2;
   transform: translate(50%, -50%);
-  width: 10rem;
-  height: 10rem;
+  width: 25%;
+  height: 25%;
 }
 
 .video-section__text {
