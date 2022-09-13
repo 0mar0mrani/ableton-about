@@ -47,6 +47,12 @@
   top: 0;
   z-index: 9999;
   background-color: #ffffffea;
+  /* For transition with JS */
+  transition: all 0.3s ease-in-out;
+}
+
+.sub-navigation--hidden {
+  transform: translate3d(0, -100%, 0);
 }
 
 .sub-navigation__menu {
