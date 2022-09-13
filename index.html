@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/video.css" />
     <link rel="stylesheet" href="css/full-image.css" />
     <link rel="stylesheet" href="css/card.css" />
+    <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/typography.css" />
   </head>
 
@@ -293,7 +294,7 @@
 
               <li><a href="#">Jobs</a></li>
 
-              <ul>
+              <ul class="footer__icons-container">
                 <li class="footer__icon-container">
                   <a href="#"
                     ><img
@@ -334,7 +335,7 @@
           </div>
 
           <div class="footer__education">
-            <h3>Education</h3>
+            <h3 class="h3--footer">Education</h3>
             <ul>
               <li><a href="#">Offers for students and teachers</a></li>
               <li><a href="#">Ableton for the Classroom</a></li>
@@ -343,19 +344,24 @@
           </div>
 
           <div class="footer__signup">
-            <h3>Sign up to our newsletter</h3>
+            <h3 class="h3--footer">Sign up to our newsletter</h3>
             <p>
               Enter your email address to stay up to date with the latest
               offers, tutorials, downloads, surveys and more.
             </p>
-            <fieldset>
-              <input type="email" />
-              <button>Sign up</button>
-            </fieldset>
+            <div class="footer__email-container">
+              <input
+                type="email"
+                required
+                class="footer__email"
+                placeholder="Email Address"
+              />
+              <button class="footer__button">Sign up</button>
+            </div>
           </div>
 
           <div class="footer__community">
-            <h3>Community</h3>
+            <h3 class="h3--footer">Community</h3>
             <ul>
               <li><a href="#">Find Ableton User Groups</a></li>
               <li><a href="#">Find Certified Training</a></li>
@@ -364,6 +370,7 @@
           </div>
 
           <div class="footer__distributers">
+            <h3 class="h3--footer">Distributors</h3>
             <ul>
               <li><a href="#">Find Distributors</a></li>
               <li><a href="#">Try Push in-store</a></li>
@@ -371,23 +378,27 @@
           </div>
 
           <div class="footer__language-location">
-            <select name="language" id="language">
-              <option value="">English</option>
-              <option value="">Norsk</option>
-              <option value="">Svensk</option>
-              <option value="">Dansk</option>
-            </select>
+            <h3 class="h3--footer">Language and Location</h3>
 
-            <select name="country" id="country">
-              <option value="">Norway</option>
-              <option value="">England</option>
-              <option value="">Sweeden</option>
-              <option value="">Denmark</option>
-            </select>
+            <fieldset class="footer__language-location-container">
+              <select name="language" id="language" class="footer__language">
+                <option value="">English</option>
+                <option value="">Norsk</option>
+                <option value="">Svensk</option>
+                <option value="">Dansk</option>
+              </select>
+
+              <select name="country" id="country" class="footer__country">
+                <option value="">Norway</option>
+                <option value="">England</option>
+                <option value="">Sweden</option>
+                <option value="">Denmark</option>
+              </select>
+            </fieldset>
           </div>
 
           <div class="footer__details">
-            <ul>
+            <ul class="footer__details-more">
               <li><a href="#">Contact Us</a></li>
               <li><a href="#">Press Resources</a></li>
               <li><a href="#">Legal Info</a></li>
@@ -396,11 +407,11 @@
               <li><a href="#">Imprint</a></li>
             </ul>
 
-            <div>
+            <div class="footer__details-logo">
               <p>Made in Berlin</p>
               <svg
                 role="img"
-                class="main-navigation__logo"
+                class="footer__logo"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 45 21"
               >
