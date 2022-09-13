@@ -4,3 +4,9 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
 }
+
+/* Color when selecting text */
+::selection {
+  background: #0000ff;
+  color: #f9f9ff;
+}
