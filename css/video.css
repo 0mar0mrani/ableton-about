@@ -6,18 +6,30 @@
   margin: 0 37.5rem;
 }
 
-.video-section__video {
-  display: flex;
+.video-section__container {
   width: 100%;
-  height: auto;
+  height: 100%;
   position: relative;
+  padding-top: 56.25%;
   overflow: hidden;
+}
+
+.video-section__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
 .video-section__thumbnail {
   position: absolute;
   top: 0;
   cursor: pointer;
+  z-index: 1;
 }
 
 .video-section__thumbnail--hidden {
@@ -25,7 +37,7 @@
 }
 
 .video-section__thumbnail-image {
-  width: 103%;
+  width: 100%;
   height: auto;
 }
 
