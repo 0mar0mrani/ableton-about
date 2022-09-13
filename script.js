@@ -28,3 +28,10 @@ window.addEventListener('scroll', function () {
 
   lastScroll = currentScroll;
 });
+
+// Hide thumbnail and play svg
+const playBody = document.querySelector('.video-section__thumbnail');
+
+playBody.addEventListener('click', function () {
+  playBody.classList.add('video-section__thumbnail--hidden');
+});

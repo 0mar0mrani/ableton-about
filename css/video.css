@@ -3,13 +3,40 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 37.5rem;
+  margin: 0 37.5rem;
 }
 
 .video-section__video {
   display: flex;
   width: 100%;
   height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-section__thumbnail {
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+}
+
+.video-section__thumbnail--hidden {
+  display: none;
+}
+
+.video-section__thumbnail-image {
+  width: 103%;
+  height: auto;
+}
+
+.video-section__thumbnail-play {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  z-index: 2;
+  transform: translate(50%, -50%);
+  width: 10rem;
+  height: 10rem;
 }
 
 .video-section__text {
