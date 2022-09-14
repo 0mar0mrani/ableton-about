@@ -15,7 +15,6 @@ window.addEventListener('scroll', function () {
     !subNav.classList.contains('sub-navigation--hidden')
   ) {
     subNav.classList.add('sub-navigation--hidden');
-  } else {
   }
 
   //   Scroll up
@@ -29,7 +28,7 @@ window.addEventListener('scroll', function () {
   lastScroll = currentScroll;
 });
 
-// Hide thumbnail and play svg
+// Hide thumbnail and play-svg
 const playBody = document.querySelector('.video-section__thumbnail');
 
 playBody.addEventListener('click', function () {
