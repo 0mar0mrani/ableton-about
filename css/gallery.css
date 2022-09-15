@@ -2,6 +2,7 @@
 .gallery-1 {
   display: grid;
   grid-template-columns: 4fr 6fr;
+  height: 96rem;
 }
 
 .gallery-1__img {
@@ -14,11 +15,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .gallery-1__img-container--right {
   background-color: #fbffa7;
-  height: 86.3rem;
   border-radius: 2px;
 }
 
@@ -27,12 +28,13 @@
 }
 
 .gallery-1__img--right {
-  transform: scale(0.56);
-  margin-left: 12.5rem;
+  width: 40%;
+  height: auto;
+  margin-left: 20%;
 }
 
 .gallery-1__img--left {
-  margin-left: 25rem;
+  margin-left: 30%;
   z-index: 1;
 }
 
