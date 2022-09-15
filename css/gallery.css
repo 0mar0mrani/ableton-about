@@ -1,41 +1,44 @@
 /* Gallery 1 */
 .gallery-1 {
-  display: grid;
-  grid-template-columns: 4fr 6fr;
-  height: 96rem;
+  display: flex;
+  position: relative;
+  padding: 8.3% 0;
 }
 
 .gallery-1__img {
   width: 100%;
   height: auto;
   display: block;
+  z-index: 1;
 }
 
 .gallery-1__img-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 
 .gallery-1__img-container--right {
-  background-color: #fbffa7;
-  border-radius: 2px;
+  width: 33.3%;
+  height: auto;
+  margin-left: 8.3%;
 }
 
 .gallery-1__img-container--left {
-  background-color: #ffffff;
-}
-
-.gallery-1__img--right {
-  width: 40%;
+  width: 41.6%;
   height: auto;
-  margin-left: 20%;
+  margin-left: 8.3%;
 }
 
-.gallery-1__img--left {
-  margin-left: 30%;
-  z-index: 1;
+.gallery-1__background {
+  background-color: #fbffa7;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 58.3%;
+  z-index: 0;
 }
 
 /* Gallery 2 */
