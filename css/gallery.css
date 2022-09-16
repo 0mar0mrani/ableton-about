@@ -8,6 +8,10 @@
   align-items: center;
 }
 
+.gallery__img-container {
+  z-index: 2;
+}
+
 .gallery__img {
   width: 100%;
   height: auto;
@@ -58,11 +62,6 @@
   margin-bottom: 25%;
 }
 
-.gallery-2__img-container--left,
-.gallery-2__img-container--right {
-  z-index: 1;
-}
-
 .gallery-2__img-container--right {
   width: 41.6%;
   margin-left: 8.3%;
@@ -80,9 +79,6 @@
 }
 
 /* Gallery 3 */
-.gallery-3__img-container {
-  z-index: 2;
-}
 
 .gallery-3__background {
   background-color: #d5b3ff;
