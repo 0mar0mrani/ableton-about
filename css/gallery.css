@@ -1,8 +1,11 @@
 /* Gallery 1 */
-.gallery-1 {
+.gallery-1,
+.gallery-2,
+.gallery-3 {
   display: flex;
   position: relative;
   padding: 8.3% 0;
+  align-items: center;
 }
 
 .gallery__img {
@@ -43,12 +46,6 @@
 }
 
 /* Gallery 2 */
-.gallery-2 {
-  display: flex;
-  align-items: center;
-  padding: 8.3% 0;
-  position: relative;
-}
 
 .gallery-2__left-container {
   display: flex;
@@ -83,13 +80,6 @@
 }
 
 /* Gallery 3 */
-.gallery-3 {
-  display: flex;
-  position: relative;
-  align-items: center;
-  padding: 8.3% 0;
-}
-
 .gallery-3__img-container {
   z-index: 2;
 }
