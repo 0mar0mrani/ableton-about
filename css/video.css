@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 37.5rem;
+  padding: 0 40rem;
 }
 
 .video-section__container {
@@ -56,4 +56,22 @@
   font-size: 1.4rem;
   margin-top: 0.7rem;
   font-weight: 500;
+}
+
+@media screen and (max-width: 1600px) {
+  .video-section {
+    padding: 0 25vw;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .video-section {
+    padding: 0 16.7vw;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .video-section {
+    padding: 0 8.333vw;
+  }
 }
