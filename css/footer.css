@@ -9,10 +9,17 @@
   row-gap: 7rem;
 }
 
-.h2--footer {
-  font-size: 6rem;
-  font-weight: 500;
-  margin-bottom: 6rem;
+.footer__logo-container {
+  width: 19rem;
+  height: auto;
+  margin-bottom: 6.6rem;
+}
+
+.footer__logo-image {
+  width: 100%;
+  height: auto;
+  filter: brightness(0%);
+  display: block;
 }
 
 .footer li,
