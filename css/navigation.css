@@ -156,3 +156,25 @@
   gap: 4rem;
   padding: 2rem 4rem;
 }
+
+@media screen and (max-width: 1600px) {
+  .sub-navigation__menu {
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .sub-navigation__menu {
+    gap: 2rem;
+  }
+  .sub-navigation__menu {
+    padding: 2rem 2rem;
+  }
+
+  .sub-navigation__menu {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+}
