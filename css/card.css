@@ -38,10 +38,10 @@
   display: inline-block;
   background-image: url('../assets/svg/arrow.svg');
   background-repeat: no-repeat;
+  background-position: 0 0.25rem;
   height: 2rem;
   width: 2rem;
-  margin-top: 0.6rem;
-  margin-left: -0rem;
+  margin-left: -0.8rem;
   filter: invert(10%) sepia(100%) saturate(4911%) hue-rotate(242deg)
     brightness(104%) contrast(141%);
 }
