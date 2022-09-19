@@ -61,3 +61,12 @@ const playBody = document.querySelector('.video-section__thumbnail');
 playBody.addEventListener('click', function () {
   playBody.classList.add('video-section__thumbnail--hidden');
 });
+
+// If more window is open when lower than 1100 px --> closes
+window.addEventListener('resize', function () {
+  if (window.innerWidth < 1100) {
+    moreNavigation.classList.remove('main-navigation__more--open');
+  } else {
+    moreNavigation.classList.add('main-navigation__more--open');
+  }
+});
