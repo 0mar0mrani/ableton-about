@@ -61,10 +61,33 @@
   font-weight: 500;
   margin-left: 1.2rem;
   cursor: pointer;
+  position: relative;
+  width: 6.3rem;
+  text-align: start;
+}
+
+.main-navigation__menu-button::after {
+  content: '';
+  display: inline-block;
+  background-image: url('/assets/svg/triangle-down.svg');
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-position: right bottom 37%;
 }
 
 .main-navigation__menu-button--open {
   color: #ffffff;
+}
+
+.main-navigation__menu-button--open::after {
+  transform: scaleY(-1) translateY(-0.5rem);
+  filter: invert(92%) sepia(93%) saturate(29%) hue-rotate(249deg)
+    brightness(106%) contrast(100%);
 }
 
 @media screen and (max-width: 1600px) {
