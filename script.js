@@ -21,10 +21,7 @@ menuButton.addEventListener('click', function () {
 
 moreButton.addEventListener('click', function () {
   moreNavigation.classList.toggle('main-navigation__more--open');
-
-  const text = moreButton.textContent === 'More +' ? 'More -' : 'More +';
-
-  moreButton.textContent = text;
+  moreButton.classList.toggle('main-navigation__more-button--open');
 });
 
 // Hide sub bar on scroll down and show on scroll up

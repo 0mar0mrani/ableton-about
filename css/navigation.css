@@ -48,6 +48,28 @@
   font-weight: inherit;
   color: #ff764d;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.main-navigation__more-button::after,
+.main-navigation__more-button--open::after {
+  content: '';
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  margin-top: 0.2rem;
+  margin-left: 0.5rem;
+  filter: invert(51%) sepia(35%) saturate(925%) hue-rotate(326deg)
+    brightness(105%) contrast(102%);
+}
+
+.main-navigation__more-button::after {
+  background-image: url('/assets/svg/plus.svg');
+}
+
+.main-navigation__more-button--open::after {
+  background-image: url('/assets/svg/minus.svg');
 }
 
 .main-navigation__list-item--cta {
