@@ -10,7 +10,6 @@ const logoNavigation = document.querySelector('.main-navigation__logo');
 menuButton.addEventListener('click', function () {
   for (let i = 0; i < mainNavigation.length; i++) {
     mainNavigation[i].classList.toggle('main-navigation__menu--open');
-    console.log(mainNavigation[i]);
   }
 
   moreNavigation.classList.toggle('main-navigation__more--open');
