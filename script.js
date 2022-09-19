@@ -1,4 +1,15 @@
 'use strict';
+// More button
+const moreButton = document.querySelector('.main-navigation__more-button');
+const moreNavigation = document.querySelector('.main-navigation__more');
+
+moreButton.addEventListener('click', function () {
+  moreNavigation.classList.toggle('main-navigation__more--open');
+
+  const text = moreButton.textContent === 'More +' ? 'More -' : 'More +';
+
+  moreButton.textContent = text;
+});
 
 // Hide sub bar on scroll down and show on scroll up
 const subNav = document.querySelector('.sub-navigation');

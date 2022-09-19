@@ -35,6 +35,15 @@
 .main-navigation__list-item--highlighted,
 .sub-navigation__list-item--active {
   color: #ff764d;
+  background-color: inherit;
+}
+
+.main-navigation__more-button {
+  font-size: inherit;
+  background-color: inherit;
+  font-weight: inherit;
+  color: #ff764d;
+  cursor: pointer;
 }
 
 .main-navigation__list-item--cta {
@@ -83,9 +92,12 @@
 /* More + */
 .main-navigation__more {
   display: none;
-  display: flex;
   flex-direction: column;
   margin: 2.7rem 4rem 5.5rem 4rem;
+}
+
+.main-navigation__more--open {
+  display: flex;
 }
 
 .main-navigation__h2 {
