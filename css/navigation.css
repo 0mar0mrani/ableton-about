@@ -15,6 +15,10 @@
   z-index: 99999999;
 }
 
+.main-navigation__logo--open {
+  fill: #ffffff;
+}
+
 .main-navigation__menu--left {
   display: flex;
   gap: 4rem;
@@ -56,6 +60,11 @@
   font-size: 2rem;
   font-weight: 500;
   margin-left: 1.2rem;
+  cursor: pointer;
+}
+
+.main-navigation__menu-button--open {
+  color: #ffffff;
 }
 
 @media screen and (max-width: 1600px) {
@@ -148,6 +157,12 @@
   }
 }
 
+@media screen and (max-width: 1100px) {
+  .main-navigation__more {
+    display: block;
+  }
+}
+
 /* Sub navigation */
 .sub-navigation {
   position: sticky;
@@ -218,6 +233,12 @@
     font-size: 2rem;
     padding-left: 1.4rem;
     transform: translateY(-84.95rem);
+    transition: all 0.3s;
+  }
+
+  .main-navigation__menu--open,
+  .main-navigation__more--open {
+    transform: translateY(0rem);
   }
 
   .main-navigation__menu--left {
