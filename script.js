@@ -18,7 +18,6 @@ menuButton.addEventListener('click', function () {
 });
 
 // More button
-
 moreButton.addEventListener('click', function () {
   moreNavigation.classList.toggle('main-navigation__more--open');
   moreButton.classList.toggle('main-navigation__more-button--open');
@@ -61,9 +60,13 @@ playBody.addEventListener('click', function () {
 
 // If more window is open when lower than 1100 px --> closes
 window.addEventListener('resize', function () {
-  if (window.innerWidth < 1100) {
+  if (
+    window.innerWidth < 1100 &&
+    moreNavigation.classList.contains(
+      'main-navigation__more--open' &&
+        !mainNavigation.classList.contains('main-navigation__menu--open')
+    )
+  ) {
     moreNavigation.classList.remove('main-navigation__more--open');
-  } else {
-    moreNavigation.classList.add('main-navigation__more--open');
   }
 });
