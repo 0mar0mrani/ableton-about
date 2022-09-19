@@ -9,6 +9,27 @@
   row-gap: 7rem;
 }
 
+.footer__container a {
+  display: flex;
+  align-items: center;
+}
+
+.footer__group1 a::after,
+.footer__education a::after,
+.footer__community a::after,
+.footer__distributers a::after {
+  content: '';
+  width: 2rem;
+  height: 2rem;
+  background-image: url('/assets/svg/arrow.svg');
+  background-size: contain;
+  background-size: 50%;
+  background-position: center bottom 0.4rem;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-left: -0.4rem;
+}
+
 .footer__logo-container {
   width: 19rem;
   height: auto;
