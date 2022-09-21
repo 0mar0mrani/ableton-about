@@ -1,6 +1,6 @@
 .footer {
   padding: 12rem;
-  border-top: solid 2px #f3f3f3;
+  border-top: solid 2px var(--color-white-darker);
 }
 
 .footer__container {
@@ -65,7 +65,7 @@
 .footer__email {
   padding: 0.8rem 1.5rem;
   border: none;
-  background-color: #eee;
+  background-color: var(--color-white-darkest);
   width: 10rem;
   flex-grow: 1;
   font-size: 2rem;
@@ -79,10 +79,10 @@
 }
 
 .footer__button {
-  background-color: #0000ff;
+  background-color: var(--color-blue);
   font-size: 2rem;
   font-weight: 500;
-  color: #ffffff;
+  color: var(--color-white);
   padding: 0.7rem 3rem;
   margin-left: auto;
   cursor: pointer;
@@ -99,7 +99,7 @@
 
 .footer__language,
 .footer__country {
-  background-color: #eee;
+  background-color: var(--color-white-darkest);
   font-size: 1.4rem;
   font-family: inherit;
   font-weight: 500;

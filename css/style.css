@@ -1,5 +1,5 @@
 body {
-  background-color: #f3f3f3;
+  background-color: var(--color-white-darker);
 
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -7,6 +7,6 @@ body {
 
 /* Color when selecting text */
 ::selection {
-  background: #0000ff;
-  color: #f9f9ff;
+  background: var(--color-blue);
+  color: var(--color-white-darker);
 }

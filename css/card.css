@@ -15,7 +15,7 @@
 }
 
 .card__text-container {
-  background-color: #b1c4ff;
+  background-color: var(--color-blue-light);
   font-size: 3rem;
   font-weight: 500;
   padding: 13.3rem;
@@ -29,7 +29,7 @@
 
 .card__text-container p:last-child {
   margin-top: 1rem;
-  color: #0000ff;
+  color: var(--color-blue);
 }
 
 /* Arrow Icon */

@@ -1,5 +1,5 @@
 .container {
   max-width: 160rem;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: var(--color-white);
 }

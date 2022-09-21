@@ -19,7 +19,7 @@
 }
 
 .about-text__h2 a {
-  color: #0000ff;
+  color: var(--color-blue);
 }
 
 @media screen and (max-width: 1600px) {
