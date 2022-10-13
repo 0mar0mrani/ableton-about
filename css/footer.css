@@ -21,7 +21,7 @@
   content: '';
   width: 2rem;
   height: 2rem;
-  background-image: url('/assets/svg/arrow.svg');
+  background-image: url('../assets/svg/arrow.svg');
   background-size: contain;
   background-size: 50%;
   background-position: center bottom 0.25rem;

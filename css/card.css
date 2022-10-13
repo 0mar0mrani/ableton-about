@@ -6,7 +6,7 @@
 }
 
 .card__image-container {
-  background-image: url('/assets/image/office-blur.jpg');
+  background-image: url('../assets/image/office-blur.jpg');
   background-size: cover;
   background-repeat: none;
   background-position: 50% 50%;
