@@ -15,6 +15,8 @@ window.addEventListener('scroll', handleWindowScroll);
 
 videoBody.addEventListener('click', handleVideoBodyClick);
 
+window.addEventListener('resize', handleWindowResize);
+
 // Handlers
 function handleMenuButtonClick() {
   toggleMenu();
@@ -30,6 +32,10 @@ function handleWindowScroll() {
 
 function handleVideoBodyClick() {
   hideVideoThumbnail();
+}
+
+function handleWindowResize() {
+  resetMobileNavigation();
 }
 
 // Functions
@@ -78,16 +84,16 @@ function hideVideoThumbnail() {
   videoBody.classList.add('video-section__thumbnail--hidden');
 }
 
-// If more window is open when lower than 1100 px --> closes
-window.addEventListener('resize', function () {
+function resetMobileNavigation() {
+  // if lower than 1100 px, More is open and mobile nav is not open
   if (
-    // if lower than 1100 px, More is open and mobile nav is not open
-    window.innerWidth < 1100 &&
-    moreNavigation.classList.contains('main-navigation__more--open') &&
-    !mainNavigation[0].classList.contains('main-navigation__menu--open')
-  ) {
-    // Reset More button and it's features
+  window.innerWidth < 1100 &&
+  moreNavigation.classList.contains('main-navigation__more--open') &&
+  !mainNavigation[0].classList.contains('main-navigation__menu--open')
+  )
+    {
     moreNavigation.classList.remove('main-navigation__more--open');
     moreButton.classList.remove('main-navigation__more-button--open');
-  }
-});
+    }
+}
+
