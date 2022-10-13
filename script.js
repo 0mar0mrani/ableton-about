@@ -7,9 +7,15 @@ const logoNavigation = document.querySelector('.main-navigation__logo');
 // Menu button
 menuButton.addEventListener('click', handleMenuButtonClick);
 
+moreButton.addEventListener('click', handleMoreButtonClick);
+
 // Handlers
 function handleMenuButtonClick() {
   toggleMenu();
+}
+
+function handleMoreButtonClick() {
+  toggleMore();
 }
 
 // Functions
@@ -23,11 +29,12 @@ function toggleMenu() {
   menuButton.classList.toggle('main-navigation__menu-button--open');
 }
 
-// More button
-moreButton.addEventListener('click', function () {
+function toggleMore() {
   moreNavigation.classList.toggle('main-navigation__more--open');
   moreButton.classList.toggle('main-navigation__more-button--open');
-});
+}
+
+
 
 // Hide sub bar on scroll down and show on scroll up
 const subNav = document.querySelector('.sub-navigation');
