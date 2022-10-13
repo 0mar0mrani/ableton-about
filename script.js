@@ -9,6 +9,8 @@ menuButton.addEventListener('click', handleMenuButtonClick);
 
 moreButton.addEventListener('click', handleMoreButtonClick);
 
+window.addEventListener('scroll', handleWindowScroll);
+
 // Handlers
 function handleMenuButtonClick() {
   toggleMenu();
@@ -18,30 +20,12 @@ function handleMoreButtonClick() {
   toggleMore();
 }
 
-// Functions
-function toggleMenu() {
-  for (let i = 0; i < mainNavigation.length; i++) {
-    mainNavigation[i].classList.toggle('main-navigation__menu--open');
-  }
-
-  moreNavigation.classList.toggle('main-navigation__more--open');
-  logoNavigation.classList.toggle('main-navigation__logo--open');
-  menuButton.classList.toggle('main-navigation__menu-button--open');
-}
-
-function toggleMore() {
-  moreNavigation.classList.toggle('main-navigation__more--open');
-  moreButton.classList.toggle('main-navigation__more-button--open');
+function handleWindowScroll() {
+  toggleSubMenu();
 }
 
 
-
-// Hide sub bar on scroll down and show on scroll up
-const subNav = document.querySelector('.sub-navigation');
-let lastScroll = 0;
-let minimumScroll = 150;
-
-window.addEventListener('scroll', function () {
+function toggleSubMenu() {
   const currentScroll = window.pageYOffset;
 
   //   Scroll down
@@ -62,7 +46,29 @@ window.addEventListener('scroll', function () {
   }
 
   lastScroll = currentScroll;
-});
+}
+
+
+// Functions
+function toggleMenu() {
+  for (let i = 0; i < mainNavigation.length; i++) {
+    mainNavigation[i].classList.toggle('main-navigation__menu--open');
+  }
+
+  moreNavigation.classList.toggle('main-navigation__more--open');
+  logoNavigation.classList.toggle('main-navigation__logo--open');
+  menuButton.classList.toggle('main-navigation__menu-button--open');
+}
+
+function toggleMore() {
+  moreNavigation.classList.toggle('main-navigation__more--open');
+  moreButton.classList.toggle('main-navigation__more-button--open');
+}
+
+// Hide sub bar on scroll down and show on scroll up
+const subNav = document.querySelector('.sub-navigation');
+let lastScroll = 0;
+let minimumScroll = 150;
 
 // Hide thumbnail and play-svg
 const playBody = document.querySelector('.video-section__thumbnail');
