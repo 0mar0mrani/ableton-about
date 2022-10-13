@@ -1,4 +1,3 @@
-'use strict';
 const menuButton = document.querySelector('.main-navigation__menu-button');
 const mainNavigation = document.querySelectorAll('.main-navigation__menu');
 const moreNavigation = document.querySelector('.main-navigation__more');
@@ -6,7 +5,15 @@ const moreButton = document.querySelector('.main-navigation__more-button');
 const logoNavigation = document.querySelector('.main-navigation__logo');
 
 // Menu button
-menuButton.addEventListener('click', function () {
+menuButton.addEventListener('click', handleMenuButtonClick);
+
+// Handlers
+function handleMenuButtonClick() {
+  toggleMenu();
+}
+
+// Functions
+function toggleMenu() {
   for (let i = 0; i < mainNavigation.length; i++) {
     mainNavigation[i].classList.toggle('main-navigation__menu--open');
   }
@@ -14,7 +21,7 @@ menuButton.addEventListener('click', function () {
   moreNavigation.classList.toggle('main-navigation__more--open');
   logoNavigation.classList.toggle('main-navigation__logo--open');
   menuButton.classList.toggle('main-navigation__menu-button--open');
-});
+}
 
 // More button
 moreButton.addEventListener('click', function () {
