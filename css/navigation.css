@@ -233,7 +233,6 @@
   position: sticky;
   border-top: 2px solid var(--color-white-darker);
   top: 0;
-  z-index: 9999;
   background-color: #ffffffea;
   width: 100%;
   /* For transition with JS */
