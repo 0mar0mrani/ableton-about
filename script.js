@@ -5,16 +5,13 @@ const moreButton = document.querySelector('.main-navigation__more-button');
 const logoNavigation = document.querySelector('.main-navigation__logo');
 const subNav = document.querySelector('.sub-navigation');
 const videoBody = document.querySelector('.video-section__thumbnail');
+const navigation = document.querySelector('.navigation');
 
 // Menu button
 menuButton.addEventListener('click', handleMenuButtonClick);
-
 moreButton.addEventListener('click', handleMoreButtonClick);
-
 window.addEventListener('scroll', handleWindowScroll);
-
 videoBody.addEventListener('click', handleVideoBodyClick);
-
 window.addEventListener('resize', handleWindowResize);
 
 // Handlers
@@ -40,11 +37,13 @@ function handleWindowResize() {
 
 // Functions
 function toggleMenu() {
-  for (let i = 0; i < mainNavigation.length; i++) {
-    mainNavigation[i].classList.toggle('main-navigation__menu--open');
-  }
+  // for (let i = 0; i < mainNavigation.length; i++) {
+  //   mainNavigation[i].classList.toggle('main-navigation__menu--open');
+  // }
 
-  moreNavigation.classList.toggle('main-navigation__more--open');
+  navigation.classList.toggle('navigation--open');
+
+  // moreNavigation.classList.toggle('main-navigation__more--open');
   logoNavigation.classList.toggle('main-navigation__logo--open');
   menuButton.classList.toggle('main-navigation__menu-button--open');
 }
