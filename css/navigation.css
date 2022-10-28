@@ -1,11 +1,17 @@
 /* Main navigation */
 .header {
-
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .header__button-logo-container {
   display: flex;
   align-items: center;
+}
+
+.navigation {
+  flex-grow: 1;
 }
 
 .main-navigation {
@@ -14,7 +20,8 @@
   font-weight: 500;
   padding: 0.5rem 4rem;
   align-items: center;
-  z-index: 99999;
+  justify-content: space-between;
+  z-index: 99999;;
 }
 
 .main-navigation__logo--container {
@@ -25,6 +32,7 @@
   width: 6rem;
   height: 6rem;
   margin-right: 3rem;
+  margin-left: 2rem;
 }
 
 .main-navigation__logo--open {
@@ -227,6 +235,7 @@
   top: 0;
   z-index: 9999;
   background-color: #ffffffea;
+  width: 100%;
   /* For transition with JS */
   transition: all 0.3s ease-in-out;
 }
