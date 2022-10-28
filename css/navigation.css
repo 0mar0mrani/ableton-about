@@ -36,7 +36,7 @@
 }
 
 .main-navigation__logo--open {
-  fill: var(--color-white);
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(358deg) brightness(106%) contrast(101%);
 }
 
 .main-navigation__menu--left {
