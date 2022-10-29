@@ -1,15 +1,15 @@
 .full-image {
-  margin: 0 13.3rem;
+	margin: 0 13.3rem;
 }
 
 .full-image__image {
-  width: 100%;
-  height: auto;
-  display: block;
+	width: 100%;
+	height: auto;
+	display: block;
 }
 
 @media screen and (max-width: 1600px) {
-  .full-image {
-    margin: 0 8.333vw;
-  }
+	.full-image {
+		margin: 0 8.333vw;
+	}
 }
