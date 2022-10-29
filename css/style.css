@@ -1,12 +1,12 @@
-body {
-  background-color: var(--color-white-darker);
-
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* Color when selecting text */
-::selection {
-  background: var(--color-blue);
-  color: var(--color-white-darker);
-}
+@import url(./reset.css);
+@import url(./variables.css);
+@import url(./layout.css);
+@import url(./header.css);
+@import url(./hero.css);
+@import url(./gallery.css);
+@import url(./text.css);
+@import url(./video.css);
+@import url(./full-image.css);
+@import url(./card.css);
+@import url(./footer.css);
+@import url(./typography.css);

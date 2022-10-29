@@ -1,0 +1,12 @@
+body {
+	background-color: var(--color-white-darker);
+
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+}
+ 
+/* Color when selecting text */
+::selection {
+	background: var(--color-blue);
+	color: var(--color-white-darker);
+}
