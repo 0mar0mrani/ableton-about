@@ -21,18 +21,21 @@
   padding: 0.5rem 4rem;
   align-items: center;
   justify-content: space-between;
+  height: 7rem;
   z-index: 99999;;
+  padding: 0 4rem;
 }
 
 .main-navigation__logo--container {
+  display: flex;
   z-index: 9999999;
 }
 
 .main-navigation__logo {
   width: 6rem;
   height: 6rem;
-  margin-right: 3rem;
-  margin-left: 2rem;
+  /* margin-right: 3rem; */
+  margin-left: 4rem;
 }
 
 .main-navigation__logo--open {
@@ -145,13 +148,11 @@
   }
   .main-navigation {
     font-size: 1.6rem;
+    padding: 0 2rem 0 0;
   }
   .main-navigation__logo {
     margin-right: 2rem;
-  }
-
-  .main-navigation {
-    padding: 0 2rem;
+    margin-left: 2rem;
   }
 
   .main-navigation__list-item--small {
