@@ -365,6 +365,7 @@
 
 	.main-navigation__more-2-section {
 		width: 25rem;
+		flex-shrink: 0;
 	}
 
 	.main-navigation__list-item--hidden {
