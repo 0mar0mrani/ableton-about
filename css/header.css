@@ -1,9 +1,11 @@
+
 /* Main navigation */
 .header {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
 	position: relative;
+	width: 100%;
 }
 
 .header__button-logo-container {
@@ -206,6 +208,7 @@
 	display: flex;
 	flex-direction: column;
 	width: 25%;
+	flex-shrink: 0;
 	line-height: 1.5;
 }
 
@@ -247,7 +250,7 @@
 	top: 0;
 	background-color: #ffffffea;
 	width: 100%;
-	border-top: 2px solid var(--color-white-darker);
+  border-top: 2px solid var(--color-white-darker);
 	/* For transition with JS */
 	transition: transform 0.3s ease-in-out;
 }
@@ -349,9 +352,15 @@
 
 	.main-navigation__more-2 {
 		font-size: 1.4rem;
-		margin-bottom: 4rem;
+		padding-bottom: 2rem;
 		gap: 2rem;
-		width: 100rem;
+		width: 100%;
+		
+		overflow-x: scroll;
+	}
+
+	.main-navigation__more-2-section {
+		width: 25rem;
 	}
 
 	.main-navigation__list-item--hidden {
@@ -377,10 +386,5 @@
 		font-weight: 500;
 		gap: 1.4rem;
 		margin-bottom: 2.4rem;
-	}
-
-	.main-navigation__scrollcontainer {
-		width: 100vw;
-		overflow: scroll;
 	}
 }
