@@ -314,7 +314,7 @@
 		content: '';
 		width: 100%;
 		height: 10%;
-		background: linear-gradient(to right, #0000ff00 96%, #0000ff 99%);
+		background: linear-gradient(to right, #0000ff00 95%, #0000ff 99%);
 		z-index: 99999;
 		pointer-events: none
 	}
