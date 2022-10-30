@@ -228,7 +228,6 @@
 	}
 
 	.main-navigation__more-1 {
-		flex-direction: column;
 		gap: 2rem;
 		font-size: 1.6rem;
 	}
