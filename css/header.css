@@ -384,7 +384,7 @@
 		font-size: 2rem;
 	}
 
-	.main-navigation__more-1 ul {
+	.main-navigation__more-1 {
 		flex-direction: column;
 		font-size: 1.4rem;
 		font-weight: 500;
