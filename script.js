@@ -1,11 +1,13 @@
-const menuButton = document.querySelector('.main-navigation__menu-button');
+const navigation = document.querySelector('.navigation');
 const mainNavigation = document.querySelectorAll('.main-navigation__menu');
 const moreNavigation = document.querySelector('.main-navigation__more');
+const subNavigation = document.querySelector('.sub-navigation');
+
+const menuButton = document.querySelector('.main-navigation__menu-button');
 const moreButton = document.querySelector('.main-navigation__more-button');
+
 const logoNavigation = document.querySelector('.main-navigation__logo');
-const subNav = document.querySelector('.sub-navigation');
 const videoBody = document.querySelector('.video-section__thumbnail');
-const navigation = document.querySelector('.navigation');
 
 // Menu button
 menuButton.addEventListener('click', handleMenuButtonClick);
@@ -65,17 +67,17 @@ function toggleSubMenu() {
 	if (
 		currentScroll > lastScroll &&
 		currentScroll > minimumScroll &&
-		!subNav.classList.contains('sub-navigation--hidden')
+		!subNavigation.classList.contains('sub-navigation--hidden')
 	) {
-		subNav.classList.add('sub-navigation--hidden');
+		subNavigation.classList.add('sub-navigation--hidden');
 	}
 
 	//   Scroll up
 	if (
 		currentScroll < lastScroll &&
-		subNav.classList.contains('sub-navigation--hidden')
+		subNavigation.classList.contains('sub-navigation--hidden')
 	) {
-		subNav.classList.remove('sub-navigation--hidden');
+		subNavigation.classList.remove('sub-navigation--hidden');
 	}
 
 	lastScroll = currentScroll;
