@@ -245,7 +245,8 @@
 	top: 0;
 	background-color: #ffffffea;
 	width: 100%;
-  border-top: 2px solid var(--color-white-darker);
+  	border-top: 2px solid var(--color-white-darker);
+	z-index: 80;
 	/* For transition with JS */
 	transition: transform 0.3s ease-in-out;
 }
