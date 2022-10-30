@@ -3,27 +3,35 @@
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
+  position: relative;
 }
 
 .header__button-logo-container {
 	display: flex;
 	align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 7rem;
+  z-index: 999999999;
 }
 
 .navigation {
 	flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main-navigation {
+  flex-grow: 1;
 	display: flex;
 	font-size: 2rem;
 	font-weight: 500;
-	padding: 0.5rem 4rem;
 	align-items: center;
 	justify-content: space-between;
-	min-height: 7rem;
 	z-index: 99999;;
-	padding: 0 4rem;
+	padding: 0 4rem 0 14rem;
+  min-height: 7rem;
 }
 
 .main-navigation__logo--container {
@@ -146,7 +154,7 @@
 
 	.main-navigation {
 		font-size: 1.6rem;
-		padding: 0 2rem 0 0;
+    padding: 0 2rem 0 10rem;
 	}
 
 	.main-navigation__logo {
@@ -166,6 +174,7 @@
 /* More + */
 .main-navigation__more {
 	display: none;
+  flex-grow: 1;
 	flex-direction: column;
 	margin: 2.7rem 4rem 5.5rem 4rem;
 }
@@ -235,12 +244,12 @@
 /* Sub navigation */
 .sub-navigation {
 	position: sticky;
-	border-top: 2px solid var(--color-white-darker);
 	top: 0;
 	background-color: #ffffffea;
 	width: 100%;
+  border-top: 2px solid var(--color-white-darker);
 	/* For transition with JS */
-	transition: all 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out;
 }
 
 .sub-navigation--hidden {
@@ -268,10 +277,6 @@
 	}
 
 	.sub-navigation__menu {
-		padding: 2rem 2rem;
-	}
-
-	.sub-navigation__menu {
 		font-size: 1.4rem;
 	}
 }
@@ -283,6 +288,7 @@
 
 
 @media screen and (max-width: 1100px) {
+
 	.navigation {
 		position: absolute;
 		top: 0;
@@ -334,8 +340,11 @@
 	}
 
 	.sub-navigation__menu {
-		margin-top: 0rem;
 		font-size: 1.4rem;
+	}
+
+  .sub-navigation {
+    margin-top: 7rem;
 	}
 
 	.main-navigation__more-2 {
