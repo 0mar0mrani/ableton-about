@@ -16,7 +16,7 @@ window.addEventListener('resize', handleWindowResize);
 
 // Handlers
 function handleMenuButtonClick() {
-	toggleMenu();
+	toggleMainMenu();
 }
 
 function handleMoreButtonClick() {
@@ -32,20 +32,27 @@ function handleVideoBodyClick() {
 }
 
 function handleWindowResize() {
-	resetMobileNavigation();
+	resetMobileMainNavigation()
+	resetMoreNavigation();
 }
 
 // Functions
-function toggleMenu() {
-	navigation.classList.toggle('navigation--open');
 
+let isMainMenuOpen = false;
+function toggleMainMenu() {
+	navigation.classList.toggle('navigation--open');
 	logoNavigation.classList.toggle('main-navigation__logo--open');
 	menuButton.classList.toggle('main-navigation__menu-button--open');
+
+	isMainMenuOpen = !isMainMenuOpen;
 }
 
+let isMoreMenuOpen = false;
 function toggleMoreMenu() {
 	moreNavigation.classList.toggle('main-navigation__more--open');
 	moreButton.classList.toggle('main-navigation__more-button--open');
+
+	isMoreMenuOpen = !isMoreMenuOpen;
 }
 
 let lastScroll = 0;
@@ -78,15 +85,20 @@ function hideVideoThumbnail() {
 	videoBody.classList.add('video-section__thumbnail--hidden');
 }
 
-function resetMobileNavigation() {
-	// if lower than 1100 px, More is open and mobile nav is not open
-	if (
-		window.innerWidth < 1100 &&
-		moreNavigation.classList.contains('main-navigation__more--open') &&
-		!mainNavigation[0].classList.contains('main-navigation__menu--open')
-	){
+function resetMobileMainNavigation() {
+	// if greater than 1100 px
+	if (window.innerWidth > 1100 && isMainMenuOpen === true){
+		navigation.classList.remove('navigation--open');
+		logoNavigation.classList.remove('main-navigation__logo--open');
+		menuButton.classList.remove('main-navigation__menu-button--open');
+	}
+}
+
+function resetMoreNavigation() {
+	// if lower than 1100 px
+	if (window.innerWidth < 1100 && isMoreMenuOpen === true){
 		moreNavigation.classList.remove('main-navigation__more--open');
 		moreButton.classList.remove('main-navigation__more-button--open');
 	}
-	}
+}
 
