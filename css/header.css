@@ -20,12 +20,6 @@
 	z-index: 100;
 }
 
-.navigation {
-	flex-grow: 1;
-	display: flex;
-	flex-wrap: wrap;
-}
-
 /* Header Logo */
 .main-navigation__logo {
 	width: 6rem;
@@ -35,6 +29,13 @@
 
 .main-navigation__logo--open {
 	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(358deg) brightness(106%) contrast(101%);
+}
+
+/* Navigation */
+.navigation {
+	flex-grow: 1;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 /* Main navigation */
@@ -146,7 +147,7 @@
 	filter: invert(92%) sepia(93%) saturate(29%) hue-rotate(249deg) brightness(106%) contrast(100%);
 }
 
-/* More + */
+/* Navigation More */
 .main-navigation__more {
 	display: none;
 	flex-grow: 1;
@@ -187,7 +188,7 @@
 	font-weight: 500;
 }
 
-/* Sub navigation */
+/* Sub Navigation */
 .sub-navigation {
 	position: sticky;
 	top: 0;
@@ -212,13 +213,10 @@
 	padding: 2rem 4rem;
 }
 
+/* Media Queries */
 @media screen and (max-width: 1600px) {
 	.main-navigation__menu--left {
 		display: flex;
-		gap: 3rem;
-	}
-
-	.main-navigation__more-1 ul {
 		gap: 3rem;
 	}
 
@@ -227,22 +225,14 @@
 	}
 }
 
-@media screen and (max-width: 1300px) {
-	.sub-navigation__menu {
-		gap: 2rem;
-	}
-
-	.sub-navigation__menu {
-		font-size: 1.4rem;
-	}
-	
+@media screen and (max-width: 1300px) {	
 	.main-navigation__menu--left {
 		gap: 2rem;
 	}
 
 	.main-navigation {
 		font-size: 1.6rem;
-    padding: 0 2rem 0 10rem;
+   	padding: 0 2rem 0 10rem;
 	}
 
 	.main-navigation__logo {
@@ -269,6 +259,11 @@
 
 	.main-navigation__more-2 {
 		font-size: 1.6rem;
+	}
+
+	.sub-navigation__menu {
+		font-size: 1.4rem;
+		gap: 2rem;
 	}
 }
 
@@ -325,21 +320,12 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-
 	}
 
 	.main-navigation__menu--right {
 		padding-top: 2rem;
 		gap: 2rem;
 		padding-bottom: 1rem;
-	}
-
-	.sub-navigation__menu {
-		font-size: 1.4rem;
-	}
-
-  .sub-navigation {
-    margin-top: 7rem;
 	}
 
 	.main-navigation__more-2 {
@@ -379,5 +365,13 @@
 		font-weight: 500;
 		gap: 1.4rem;
 		margin-bottom: 2.4rem;
+	}
+
+	.sub-navigation__menu {
+		font-size: 1.4rem;
+	}
+
+	.sub-navigation {
+    	margin-top: 7rem;
 	}
 }
