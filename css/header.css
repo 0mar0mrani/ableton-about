@@ -320,7 +320,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		font-weight: 400;
+		font-weight: 500;
 	}
 
 	.main-navigation__menu--right {
@@ -332,8 +332,7 @@
 	.main-navigation__more-1 {
 		flex-direction: column;
 		font-size: 1.4rem;
-		font-weight: 400;
-		gap: 1.4rem;
+		gap: 1.6rem;
 		margin-bottom: 2.4rem;
 	}
 
@@ -341,14 +340,14 @@
 		position: relative;
 		font-size: 1.4rem;
 		padding-bottom: 2rem;
-		font-weight: 300;
+		font-weight: 400;
 		gap: 2rem;
 		width: 100%;
 		overflow-x: scroll;
 	}
 
 	.main-navigation__more-2-section li:first-child  {
-		font-weight: 400;
+		font-weight: 500;
 	}
 
 	.main-navigation__more-2-section {
@@ -371,7 +370,7 @@
 	.main-navigation__h2 {
 		margin-bottom: 1rem;
 		font-size: 2rem;
-		font-weight: 400;
+		font-weight: 500;
 	}
 
 	.sub-navigation__menu {
