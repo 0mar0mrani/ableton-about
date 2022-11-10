@@ -301,10 +301,8 @@
 
 	.main-navigation__menu,
 	.main-navigation__more {
-		display: block;
 		width: 100%;
 		margin: 0;
-		padding: 0;
 		font-size: 2rem;
 		padding-left: 1.4rem;
 	}
