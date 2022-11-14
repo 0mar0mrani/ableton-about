@@ -104,11 +104,11 @@
 }
 
 .main-navigation__more-button::after {
-	background-image: url('../assets/svg/plus.svg');
+	background-image: url('../../assets/svg/plus.svg');
 }
 
 .main-navigation__more-button--open::after {
-	background-image: url('../assets/svg/minus.svg');
+	background-image: url('../../assets/svg/minus.svg');
 }
 
 /* Menu Button */
@@ -127,7 +127,7 @@
 .main-navigation__menu-button::after {
 	content: '';
 	display: inline-block;
-	background-image: url('../assets/svg/triangle-down.svg');
+	background-image: url('../../assets/svg/triangle-down.svg');
 	width: 100%;
 	height: 100%;
 	position: absolute;

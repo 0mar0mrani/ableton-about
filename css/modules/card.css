@@ -5,7 +5,7 @@
 }
 
 .card__image-container {
-	background-image: url('../assets/image/office-blur.jpg');
+	background-image: url('../../assets/image/office-blur.jpg');
 	background-size: cover;
 	background-repeat: none;
 	background-position: 50% 50%;
@@ -35,7 +35,7 @@
 .card__text-container p:last-child::after {
 	content: ' ';
 	display: inline-block;
-	background-image: url('../assets/svg/arrow.svg');
+	background-image: url('../../assets/svg/arrow.svg');
 	background-repeat: no-repeat;
 	background-position: 0 0.25rem;
 	height: 2rem;

@@ -21,7 +21,7 @@
 	content: '';
 	width: 2rem;
 	height: 2rem;
-	background-image: url('../assets/svg/arrow.svg');
+	background-image: url('../../assets/svg/arrow.svg');
 	background-size: contain;
 	background-size: 50%;
 	background-position: center bottom 0.25rem;
@@ -105,7 +105,7 @@
 	border: none;
 	padding: 0.4rem 5rem 0.4rem 1rem;
 	appearance: none;
-	background-image: url('../assets/svg/triangle-down.svg');
+	background-image: url('../../assets/svg/triangle-down.svg');
 	background-repeat: no-repeat;
 	background-size: 0.8rem;
 	background-position: calc(100% - 1rem) center;
