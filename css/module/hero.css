@@ -2,7 +2,7 @@
 	max-width: 82%;
 	margin: 0 auto;
 	height: 90vh;
-	background-image: url('../assets/image/hero.jpg');
+	background-image: url('../../assets/image/hero.jpg');
 	background-size: cover;
 	background-position: center;
 	position: relative;
