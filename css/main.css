@@ -5,10 +5,10 @@
 @import './layout.css';
 @import './typography.css';
 
-@import './module/card.css';
-@import './module/footer.css';
-@import './module/full-image.css';
-@import './module/gallery.css';
-@import './module/header.css';
-@import './module/hero.css';
-@import './module/video.css';
+@import './modules/card.css';
+@import './modules/footer.css';
+@import './modules/full-image.css';
+@import './modules/gallery.css';
+@import './modules/header.css';
+@import './modules/hero.css';
+@import './modules/video.css';
