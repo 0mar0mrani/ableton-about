@@ -1,4 +1,10 @@
 export default function Header() {
+	// Data
+	let isMainMenuOpen = false;
+	let lastScroll = 0;
+	let minimumScroll = 150;
+
+	// Query Selector
 	const navigation = document.querySelector('.navigation');
 	const mainNavigation = document.querySelectorAll('.main-navigation__menu');
 	const moreNavigation = document.querySelector('.main-navigation__more');
@@ -9,7 +15,7 @@ export default function Header() {
 
 	const logoNavigation = document.querySelector('.main-navigation__logo');
 
-	// Menu button
+	// Event Listeners
 	menuButton.addEventListener('click', handleMenuButtonClick);
 	moreButton.addEventListener('click', handleMoreButtonClick);
 	window.addEventListener('scroll', handleWindowScroll);
@@ -33,9 +39,7 @@ export default function Header() {
 		resetMoreNavigation();
 	}
 
-	// Functions
-	let isMainMenuOpen = false;
-
+	// Methods
 	function toggleMainMenu() {
 		navigation.classList.toggle('navigation--open');
 		logoNavigation.classList.toggle('main-navigation__logo--open');
@@ -51,9 +55,6 @@ export default function Header() {
 
 		isMoreMenuOpen = !isMoreMenuOpen;
 	}
-
-	let lastScroll = 0;
-	let minimumScroll = 150;
 
 	function toggleSubMenu() {
 		const currentScroll = window.pageYOffset;
