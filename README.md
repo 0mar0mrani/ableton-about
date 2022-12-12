@@ -4,7 +4,7 @@ This is an exercise of coping the [Ableton's 'About'](https://www.ableton.com/en
 See a live demo [here](ableton-copy.netlify.app).
 
 ## Features
-- Responsive design for all devices with complex change of navigation between mobile and desktop. 
+- Responsive design for all devices with complex change of menu navigation between mobile and desktop. 
 
 ## Disclaimer
 The project was made for practice purpose only. Images are taken directly from Ableton. 
