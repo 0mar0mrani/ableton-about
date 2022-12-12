@@ -18,6 +18,7 @@
 .footer__education a::after,
 .footer__community a::after,
 .footer__distributers a::after {
+	display: inline-block;
 	content: '';
 	width: 2rem;
 	height: 2rem;
@@ -26,7 +27,6 @@
 	background-size: 50%;
 	background-position: center bottom 0.25rem;
 	background-repeat: no-repeat;
-	display: inline-block;
 	margin-left: -0.4rem;
 }
 
@@ -37,10 +37,10 @@
 }
 
 .footer__logo-image {
+	display: block;
 	width: 100%;
 	height: auto;
 	filter: brightness(0%);
-	display: block;
 }
 
 .footer__group1 li,

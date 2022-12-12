@@ -14,16 +14,16 @@
 }
 
 .card__text-container {
-	background-color: var(--color-blue-light);
-	font-size: 3rem;
-	font-weight: 500;
-	padding: 13.3rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	flex-grow: 1;
 	width: 65rem;
 	height: 65rem;
+	padding: 13.3rem;
+	background-color: var(--color-blue-light);
+	font-size: 3rem;
+	font-weight: 500;
 }
 
 .card__text-container p:last-child {
