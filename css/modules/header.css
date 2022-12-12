@@ -114,14 +114,15 @@
 /* Menu Button */
 .main-navigation__menu-button {
 	display: none;
+	position: relative;
 	background-color: inherit;
+	width: 6.3rem;
+	margin-left: 1.2rem;
 	font-size: 2rem;
 	font-weight: 500;
-	margin-left: 1.2rem;
-	cursor: pointer;
-	position: relative;
-	width: 6.3rem;
 	text-align: start;
+	cursor: pointer;
+	color: #000;
 }
 
 .main-navigation__menu-button::after {
