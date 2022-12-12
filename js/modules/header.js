@@ -6,7 +6,6 @@ export default function Header() {
 
 	// Query Selector
 	const navigation = document.querySelector('.navigation');
-	const mainNavigation = document.querySelectorAll('.main-navigation__menu');
 	const moreNavigation = document.querySelector('.main-navigation__more');
 	const subNavigation = document.querySelector('.sub-navigation');
 
